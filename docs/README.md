@@ -24,6 +24,47 @@ a few simple habits.
 4. Sync up regularly to not only talk about cool new features but also about
    updates to the team's style guide.
 
+# Say no to underscores
+
+Below are step-by-step instructions for getting rid of underscores and making
+your components look as if they came natively out of the box.
+
+1. Write the label in plain English
+2. Expand common abbreviations
+3. Drop to lowercase
+4. Strip or delete special characters (e.g., hyphens)
+5. Replace spaces with underscores to create a `snake_case` name
+6. Convert `snake_case` to `CamelCase`
+7. Apply well known conventions (e.g., `Is` prefix for checkbox fields)
+
+## Example: Auto-POST Job Status
+
+Step | Result
+---- | ------
+Write the label in plain English | Auto-POST Job Status
+Expand common abbreviations | Auto-POST Job Status
+Drop to lowercase | auto-post job status
+Strip special characters | autopost job status
+Replace spaces with underscores | autopost_job_status
+Convert to `CamelCase` | AutopostJobStatus
+Apply well known conventions | AutopostJobStatus
+
+## Example: PayPal Transaction No.
+
+Step | Result
+---- | ------
+Write the label in plain English | PayPal Transaction No.
+Expand common abbreviations | PayPal Transaction Number
+Drop to lowercase | paypal transaction number
+Strip special characters | paypal transaction number
+Replace spaces with underscores | paypal_transaction_number
+Convert to `CamelCase` | PaypalTransactionNumber
+Apply well known conventions | PaypalTransactionNumber
+
+# Contents
+
+* [Permission sets](./permissionsets.html)
+
 # How to contribute
 
 This repo is configured to [publish a GitHub Pages site from the `/docs` folder 
