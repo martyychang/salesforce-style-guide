@@ -5,7 +5,7 @@ underscores as filler to replace special characters and spaces. The result is
 that uncoordinated implementations will result in the creation of _things_
 in the org like the following.
 
-* **# of Users** number field (`Account._of_Users__c`)
+* **# of Users** number field (`Account.of_Users__c`)
 * **Platforms** number field (`Account.Platforms__c`) on one object and 
   **Platforms** _checkbox_ field on a different object
 * Child relationships that have cryptic API names like `Contact.Accounts1__r`,
@@ -64,6 +64,21 @@ Apply well known conventions | PaypalTransactionNumber
 # Contents
 
 * [Permission sets](./permissionsets.html)
+
+## Custom fields
+
+Custom fields should be named following the conventions below.
+
+### URL fields
+
+URL fields should be named with the word "URL" in the label,
+unless the name is well known (e.g., website) to imply a URL.
+
+Object Label  | Field Label   | Field API Name
+------------- | ------------- | --------------
+Account       | Website       | `Website`
+Auth Provider | Authorize URL | `AuthorizeUrl`
+Auth Provider | Error URL     | `ErrorUrl`
 
 # How to contribute
 
