@@ -80,6 +80,23 @@ Account       | Website       | `Website`
 Auth Provider | Authorize URL | `AuthorizeUrl`
 Auth Provider | Error URL     | `ErrorUrl`
 
+## Custom settings
+
+Custom settings come in two types: hierarchy and list.
+
+### Hierarchy settings
+
+Hierarchy settings should be named with a descriptor
+and end with the word "Setting".
+
+Custom Setting Label | API Name
+-------------------- | -----------------------
+Feature Setting      | `FeatureSetting__c`
+Integration Setting  | `IntegrationSetting__c`
+
+Conceptually this is similar to the "settings" field
+in [scratch org definition files][3].
+
 # How to contribute
 
 This repo is configured to [publish a GitHub Pages site from the `/docs` folder 
@@ -88,3 +105,4 @@ Feel free to create issues or pull requests into `master` update the guide!
 
 [1]: https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch
 [2]: https://github.com/pages-themes/leap-day
+[3]: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_scratch_orgs_def_file_config_values.htm
