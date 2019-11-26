@@ -22,7 +22,7 @@ Every Salesforce org should have a `DatabaseJockey` class which serves
 the singular purpose of wrapping DML operations, so that Apex tests
 can be true unit tests without the friction of hitting the Salesforce database.
 
-Below is the unsurprising interface for a `DatabaseJockey`.
+Below is the definition for the `DatabaseJockey` interface.
 
 ```java
 public interface DatabaseJockey {
