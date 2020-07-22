@@ -99,6 +99,16 @@ Integration Setting  | `IntegrationSetting__c`
 Conceptually this is similar to the "settings" field
 in [scratch org definition files][3].
 
+## Email templates
+
+Email templates should be named to match the subject. See examples below.
+
+Subject | Email Template Name | Template Unique Name
+------- | ------------------- | --------------------
+CTA: Rock the Vote! | CTA: Rock the Vote! | `CtaRockTheVote`
+Big Deal Alert | Big Deal Alert | `BigDealAlert`
+What's on your mind? | What's on your mind? | `WhatsOnYourMind`
+
 ## Permission sets
 
 Keep the scope of each permission set meaningful, and choose one of these
