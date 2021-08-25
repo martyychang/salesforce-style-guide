@@ -161,6 +161,18 @@ Email Alert Field | Email Template Field
 Description | Subject
 Unique Name | Template Unique Name	
 
+### Field updates
+
+Field updates are named like assignment statements in Apex,
+using the field label in the **Name** and the field name
+in the **Unique Name**. The new value should also be included.
+
+Name | Unique Name
+---- | -----------
+Old Account Name = PRIORVALUE | OldNamePriorvalue
+Success Plan = NULL | SuccessPlanNull
+Success Plan = Premier | SuccessPlanPremier
+
 # How to contribute
 
 This repo is configured to [publish a GitHub Pages site from the `/docs` folder 
