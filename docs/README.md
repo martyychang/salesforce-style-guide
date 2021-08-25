@@ -142,6 +142,16 @@ DML History App | `DmlHistoryApp`
 Lightning Dialer | `LightningDialer`
 Lightning Experience | `LightningExperience`
 
+## Workflow rules
+
+Workflow rules should be named as imperative statements.
+
+Rule Name | Description
+--------- | -----------
+Alert Operator on Account Name Change | Send an email to operators when Account Name changes.
+
+Prefer evaluating the rule when a record is "created, and every time it's edited".
+
 # How to contribute
 
 This repo is configured to [publish a GitHub Pages site from the `/docs` folder 
