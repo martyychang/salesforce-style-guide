@@ -152,6 +152,15 @@ Alert Operator on Account Name Change | Send an email to operators when Account 
 
 Prefer evaluating the rule when a record is "created, and every time it's edited".
 
+### Email alerts
+
+Email alerts should be named to match the associated email template.
+
+Email Alert Field | Email Template Field
+----------------- | --------------------
+Description | Subject
+Unique Name | Template Unique Name	
+
 # How to contribute
 
 This repo is configured to [publish a GitHub Pages site from the `/docs` folder 
