@@ -143,6 +143,20 @@ Account: After Update Create Follow-up Task | AccountAfterUpdateCreateFollowupTa
 Account: After Update Alert on Finance Hold | AccountAfterUpdateAlertOnFinanceHold
 Account: After Update Alert on Poor Health | AccountAfterUpdateAlertOnPoorHealth
 
+### Email Alert actions
+
+If you're lazy, the label can simply be "Email Alert" for most alerts,
+so as to avoid clutter in the flow.
+
+The API name should be fully qualified with the name of the email template
+and the suffix "EmailAlert".
+
+Label | API Name
+----- | --------
+Email Alert | `ofacSearchResultFoundEmailAlert`
+Big Deal Alert | `bigDealEmailAlert`
+Email Alert | `rockTheVoteEmailAlert`
+
 ## Permission sets
 
 Keep the scope of each permission set meaningful, and choose one of these
