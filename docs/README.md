@@ -114,6 +114,35 @@ Big Deal Alert | Big Deal Alert | `BigDealAlert`
 What's on your mind? | What's on your mind? | `WhatsOnYourMind`
 Account Name Changed to {!Account.Name} | Account Name Changed | `AccountNameChanged`
 
+## Flows
+
+Object-specific flows should be prefixed with the object's API name.
+Omit the namespace for objects from a managed package if possible.
+
+Object API Name | Flow Label | Flow API Name
+--------------- | ---------- | -------------
+`outfunds__Disbursement__c` | Disbursement: Submit for Full Approval | DisbursementSubmitForFullApproval
+`Opportunity` | Opportunity: Submit for Finance Review | OpportunitySubmitForFinanceReview
+
+Record-triggered flows should be limited to a maximum of five per object, one in each context.
+
+Flow Label | Flow API Name
+---------- | -------------
+Account: Before Create | AccountBeforeCreate
+Account: After Create | AccountAfterCreate
+Account: Before Update | AccountBeforeUpdate
+Account: After Update | AccountAfterUpdate
+Account: Before Delete | AccountBeforeDelete
+
+If you must split record-triggered flows for ease of maintenance,
+keep the object label and context as a prefix.
+
+Flow Label | Flow API Name
+---------- | -------------
+Account: After Update Create Follow-up Task | AccountAfterUpdateCreateFollowupTask
+Account: After Update Alert on Finance Hold | AccountAfterUpdateAlertOnFinanceHold
+Account: After Update Alert on Poor Health | AccountAfterUpdateAlertOnPoorHealth
+
 ## Permission sets
 
 Keep the scope of each permission set meaningful, and choose one of these
