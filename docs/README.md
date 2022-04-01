@@ -133,6 +133,7 @@ Account: After Create | AccountAfterCreate
 Account: Before Update | AccountBeforeUpdate
 Account: After Update | AccountAfterUpdate
 Account: Before Delete | AccountBeforeDelete
+Payment: After Update | PaymentAfterUpdate
 
 If you must split record-triggered flows for ease of maintenance,
 keep the object label and context as a prefix.
@@ -142,6 +143,33 @@ Flow Label | Flow API Name
 Account: After Update Create Follow-up Task | AccountAfterUpdateCreateFollowupTask
 Account: After Update Alert on Finance Hold | AccountAfterUpdateAlertOnFinanceHold
 Account: After Update Alert on Poor Health | AccountAfterUpdateAlertOnPoorHealth
+
+### Create Records elements
+
+Label | API Name | Description
+----- | -------- | -----------
+Create SyncPayment Job | createSyncPaymentJob | Create an async job with **Class Name** "SyncPayment".
+
+### Decision elements
+
+A Boolean decision should have a question mark at the end of the label.
+
+Label | API Name
+----- | --------
+Status Change? | `statusChangeDecision`
+New Status | `newStatusDecision`
+
+The singular outcome elements for a Boolean decision should have "True" as
+the label, with the `Decision` suffix replaced with `Outcome` in the
+Outcome API Name.
+
+The default outcome for a Boolean decision should be relabled as "False".
+
+Label | Outcome API Name
+----- | ----------------
+True | `statusChangeOutcome`
+Ready | `newStatusReadyOutcome`
+Not Ready | `newStatusNotReadyOutcome`
 
 ### Email Alert actions
 
