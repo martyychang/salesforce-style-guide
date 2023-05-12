@@ -71,6 +71,18 @@ seen in the latest Salesforce release notes and other documentation.
 
 Custom fields should be named following the conventions below.
 
+### Lookup fields
+
+Field Label        | Field Name             | Child Relationship Name
+------------------ | ---------------------- | -------------------------
+Campaign           | `CampaignId`           | `CampaignMembers`
+First Disbursement | `FirstDisbursement__c` | `FirstFundingRequests__r`
+Last Disbursement  | `LastDisbursement__c`  | `LastFundingRequests__r`
+
+### Master-Detail fields
+
+Follow the same conventions as lookup fields.
+
 ### URL fields
 
 URL fields should be named with the word "URL" in the label,
