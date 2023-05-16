@@ -225,6 +225,15 @@ DML History App | `DmlHistoryApp`
 Lightning Dialer | `LightningDialer`
 Lightning Experience | `LightningExperience`
 
+## Validation rules
+
+Validation rules are named as imperative statements.
+
+Rule Name | Sample Description
+--------- | ------------------
+`BlockSpam` | Prevent messages that look like spam from being saved.
+`RequireAccountOrContact` | Either an account or a contact must be specified on this payment method.
+
 ## Workflow rules
 
 Workflow rules should be named as imperative statements.
